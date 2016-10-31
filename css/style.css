@@ -681,9 +681,17 @@ footer{
     text-align: center;
   }
   .footer_nav{
-    width: 37%;
+    width: 100%;
     top: 0px;
   }
+  .footer_nav_wrap{
+    width: 100%;
+  }
+  .footer_nav_wrap ul>li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
   .footer_contact{
     width: 60%;
     display: block;
@@ -693,9 +701,115 @@ footer{
     width: 100%;
     top: 0px;
   }
+  .footer_soc ul li{
+    text-align: left;
+    margin-left: calc(50% - 20%);
+  }
 }
-@media only screen and (max-width : 560px) {}
-@media only screen and (max-width : 320px) {}
+@media only screen and (max-width : 561px) {
+.header_top{
+  padding-bottom: 10px;
+}
+.logo img{
+  width: 200px;
+}
+.contact_on_top{
+  margin-top: 10px;
+}
+.social{
+  text-align: center;
+}
+.social p{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 0px;
+}
+.red_phone .red_button{
+  font-size: 20px;
+}
+.menu_nav{
+  display: none;
+}
+
+.slick-prev{
+  display: none;
+  visibility: hidden;
+}
+.slick-next{
+  display: none;
+  visibility: hidden;
+}
+.call_back_block{
+  text-align: center;
+  height: 330px;
+  padding-left: 0px;
+}
+.call_back_block a{
+  top: 20px;
+  float: none;
+  padding: 10px 30px;
+}
+
+.up_arrow{
+  display: none;
+}
+}
+@media only screen and (max-width : 320px) {
+.logo{
+  width: 100%;
+}
+.logo img{
+  width: 100%;
+}
+.contact_on_top{
+  float: none;
+  text-align: center;
+}
+.about .text{
+  padding-left: 0px;
+}
+.call_back_block h1{
+  font-size: 40px;
+}
+.plan_text{
+  width: 100%;
+}
+.call_back_block{
+  height: 400px;
+}
+.black_row{
+  height: 400px;
+}
+.black_row>p>img{
+  padding-bottom: 10px;
+  display: block;
+  margin: 10px auto 0px;
+}
+.sand_mail{
+  left: 2%;
+}
+.footer_nav_wrap ul{
+  padding-left: 0px;
+}
+.footer_nav_wrap ul>li{
+  display: block;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+.footer_contact ul li p{
+  width: 100%;
+}
+.footer_soc ul li{
+  text-align: center;
+  margin-left: auto;
+}
+  .footer_soc .img_wrap{
+    width: 100%;
+    display: block;
+  }
+}
 @media only screen and (min-width:768px) and (max-width : 979px) {}
 
 
