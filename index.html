@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Архитектурное проектирование и строительство домов и коттеджей</title>
-  <link rel="stylesheet" href="/css/slick.css" media="screen" title="no title">
-  <link rel="stylesheet" href="/css/slick-theme.css" media="screen" title="no title">
-  <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+  <meta name="description" content="Строительная компания «ORNIS». Наша компания специализируется на оказании следующих услуг: строительство домов в г. Белгород и области; архитектурное проектирование…">
+  <link rel="stylesheet" href="css/slick.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/slick-theme.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 
 </head>
 <body>
@@ -16,23 +17,29 @@
   <header>
     <div class="header_top">
       <div class="logo">
-        <img src="/images/logo.png" alt="logo">
+        <img src="images/logo.png" alt="logo">
       </div>
       <div class="contact_on_top">
-        <div class="social"></div>
+        <div class="social">
+          <p>ПОДЕЛИТЬСЯ</p>
+          <a href="vk.com/share.php?url=YOUR-URL&title=YOUR-TITLE&description=YOUR-DESCRIPTION&image=YOUR-IMAGE-SRC&noparse=true"><img src="images/vk_small.png" alt="vk"></a>
+          <a href="www.facebook.com/sharer/sharer.php?u=YOUR-URL"><img src="images/f_small.png" alt="f"></a>
+          <a href="www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=YOUR_URL&st.comments=YOUR-DESCRIPTION"><img src="images/ok_small.png" alt="ok"></a>
+          <a href="twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE"><img src="images/tweet_small.png" alt="tweet"></a>
+        </div>
         <div class="red_phone">
-          <div class="header_soc"></div>
           <a href="#" class="red_button">8 (4722) 37 - 47 - 49</a>
         </div>
       </div>
+      <div style="clear:both"></div>
     </div>
     <div class="menu_nav">
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Проекты</a></li>
-        <li><a href="#">Строительство</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#general">Главная</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#bilding">Строительство</a></li>
+        <li><a href="#comments">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </div>
   </header>
@@ -42,10 +49,10 @@
     <div class="slider_item"><img src="images/slide.jpg" alt="slide"></div>
     <div class="slider_item"><img src="images/slide.jpg" alt="slide"></div>
   </div>
-  <div class="about">
+  <div class="about" id="general">
     <div class="text">
-      <h3>СТРОИТЕЛЬНАЯ КОМПАНИЯ "ORNIS"</h3>
-      <p>Наша компания специализируется  на оказании следующих услуг:<br>
+      <p>СТРОИТЕЛЬНАЯ КОМПАНИЯ "ORNIS"<br>
+      Наша компания специализируется  на оказании следующих услуг:<br>
 - строительство домов в г. Белгород и области; <br>
 - архитектурное проектирование домов и коттеджей;<br>
 - проектирование и монтаж инженерных сетей, оформление техдокументации;<br>
@@ -57,7 +64,7 @@
 в срок<br>
 С компанией "ORNIS" Вы под надежным крылом!</p>
     </div>
-    <div class="proj_slider">
+    <div class="proj_slider" id="projects">
       <h2>ОПИСАНИЕ ПРОЕКТА</h2>
       <!--slider-->
     </div>
@@ -66,8 +73,9 @@
     <h1>ЗАКАЗАТЬ ПРОЕКТ</h1>
     <p>Оставьте свои контакты и мы вам перезвоним</p>
     <a href="#" class="red_button">хочу проект</a>
+    <div style="clear:both"></div>
   </div>
-<div class="plan_block">
+<div class="plan_block" id="bilding">
   <div class="slider_plan">
 
   </div>
@@ -96,29 +104,45 @@
     <h2>РАССЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</h2>
     <p>Оставьте свои контакты и мы вам перезвоним</p>
     <a href="#" class="red_button">рассчитать</a>
+    <div style="clear:both"></div>
   </div>
-  <div class="comment_block">
+  <div class="comment_block" id="comments">
     <h2 style="text-align: center;">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
-      <div class="comment_slider">
-        <img src="images/ava_man.png" alt="avatar">
-        <p>Лариса Алексеевна</p>
-        <p id="comment_text">"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"</p>
-      </div>
+      <div class="comment_slider_wrap">
+        <div class="comment_slider">
+          <img src="images/ava_man.png" alt="avatar">
+          <p>Лариса Алексеевна</p>
+          <p id="comment_text">"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"</p>
+        </div>
+        <div class="comment_slider">
+          <img src="images/ava_man.png" alt="avatar">
+          <p>Лариса Алексеевна!</p>
+          <p id="comment_text">"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"</p>
+        </div>
+        </div>
       <a href="#" class="red_button">Добавить отзыв</a>
       <div style="clear:both"></div>
   </div>
-  <div class="map"></div>
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sV7K3P6hnvl0eLtJIrq-qKA0PTEqYxOl&amp;width=100%&amp;height=385&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+  </div>
+  <div class="black_row">
+    <p><img src="images/red_take.png" alt="i">при строительстве дома подарок!</p>
+    <div class="up_arrow"><img src="images/go_up_arrow.png" alt="up" onclick="window.scrollTo(0,0);"></div>
+    <div class="sand_mail"><img src="images/green_mail.png" alt="mail"></div>
+    <div class="call_phone"><img src="images/green_phone.png" alt="phone"></div>
+  </div>
   <!-- /body -->
   <!-- footer -->
-  <footer>
+  <footer id="contacts">
     <div class="footer_nav">
       <div class="footer_nav_wrap">
-        <img src="images/footer_logo.jpg" alt="logo" width="260px">
+        <a href="/"><img src="images/footer_logo.jpg" alt="logo" width="260px"></a>
         <ul>
-          <li><a href="#">ГЛАВНАЯ</a></li>
-          <li><a href="#">ПРОЕКТЫ</a></li>
-          <li><a href="#">СТРОИТЕЛЬСТВО</a></li>
-          <li><a href="#">ОТЗЫВЫ</a></li>
+          <li><a href="#general">ГЛАВНАЯ</a></li>
+          <li><a href="#projects">ПРОЕКТЫ</a></li>
+          <li><a href="#bilding">СТРОИТЕЛЬСТВО</a></li>
+          <li><a href="#comments">ОТЗЫВЫ</a></li>
         </ul>
       </div>
     </div>
@@ -158,6 +182,19 @@
   </footer>
   <!-- /footer -->
   </div>
+  <!-- popup -->
+  <div id="shadow_feedback" style="display: none;"></div>
+<div id="window_feedback" style="display: none;">
+	<div id="close_feedback"></div>
+	<form class="feedbackForm2 -visor-no-click" action="" method="post">
+		<p style="text-align:center; margin-bottom:10px; color: #030303;" id="form-title">Получить консультацию</p>
+
+		<input type="text" class="inline" name="name" placeholder="Ваше имя">
+		<input type="text" class="inline" name="tel" placeholder="Номер телефона">
+		<button class="button_submit" style="width: 230px; padding: 2px 21px 0px;">Отправить заявку</button>
+	</form>
+</div>
+<div id="close_sale_baner"></div>
   <!-- script -->
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="js/slick.js" charset="utf-8"></script>
