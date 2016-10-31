@@ -8,7 +8,7 @@ $('.comment_slider_wrap').slick({
 
 });
 //плавная прокрутка до якоря
-$('a[href^="#"]').click(function (event) {
+$('a.slow_effect').click(function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -23,6 +23,56 @@ $('a[href^="#"]').click(function (event) {
 	});
 
 // popup
+$('#worck_pay').click(function() {
+
+				$('#shadow_feedback').show();
+				$('#window_feedback').show();
+				$('.close_feedback').css('display', 'block');
+			});
+
+
+$('#give_plan').click(function() {
+
+				$('#shadow_feedback').show();
+				$('#window_feedback2').show();
+				$('.close_feedback').css('display', 'block');
+			});
+
+      $('#number_to_call').click(function() {
+
+      				$('#shadow_feedback').show();
+      				$('#window_feedback3').show();
+      				$('.close_feedback').css('display', 'block');
+      			});
+
+$('#call_my').click(function() {
+
+        $('#shadow_feedback').show();
+        $('#window_feedback3').show();
+        $('.close_feedback').css('display', 'block');
+      });
+$('.close_feedback').click(function() {
+  $('#shadow_feedback').hide();
+  if($('#window_feedback').css('display')=='block'){
+    $('#window_feedback').hide();
+  }
+  if($('#window_feedback2').css('display')=='block'){
+    $('#window_feedback2').hide();
+  }
+  if($('#window_feedback3').css('display')=='block'){
+    $('#window_feedback3').hide();
+  }
+
+  $('.close_feedback').css('display', 'none');
+});
+
+
+
+
+
+
+
+// callback
 $(".feedbackForm").submit(function(){ // перехватываем все при событии отправки
 			var form = $(this); // запишем форму, чтобы потом не было проблем с this
 			var error = false; // предварительно ошибок нет
