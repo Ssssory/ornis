@@ -28,18 +28,18 @@
           <a href="twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE"><img src="images/tweet_small.png" alt="tweet"></a>
         </div>
         <div class="red_phone">
-          <a href="#" class="red_button">8 (4722) 37 - 47 - 49</a>
+          <a href="#" id="number_to_call" class="red_button">8 (4722) 37 - 47 - 49</a>
         </div>
       </div>
       <div style="clear:both"></div>
     </div>
     <div class="menu_nav">
       <ul>
-        <li><a href="#general">Главная</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#bilding">Строительство</a></li>
-        <li><a href="#comments">Отзывы</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#general" class="slow_effect">Главная</a></li>
+        <li><a href="#projects" class="slow_effect">Проекты</a></li>
+        <li><a href="#bilding" class="slow_effect">Строительство</a></li>
+        <li><a href="#comments" class="slow_effect">Отзывы</a></li>
+        <li><a href="#contacts" class="slow_effect">Контакты</a></li>
       </ul>
     </div>
   </header>
@@ -72,7 +72,7 @@
   <div class="call_back_block">
     <h1>ЗАКАЗАТЬ ПРОЕКТ</h1>
     <p>Оставьте свои контакты и мы вам перезвоним</p>
-    <a href="#" class="red_button">хочу проект</a>
+    <a href="#" class="red_button" id="give_plan">хочу проект</a>
     <div style="clear:both"></div>
   </div>
 <div class="plan_block" id="bilding">
@@ -103,7 +103,7 @@
   <div class="call_back_block">
     <h2>РАССЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</h2>
     <p>Оставьте свои контакты и мы вам перезвоним</p>
-    <a href="#" class="red_button">рассчитать</a>
+    <a href="#" class="red_button" id="worck_pay">рассчитать</a>
     <div style="clear:both"></div>
   </div>
   <div class="comment_block" id="comments">
@@ -128,9 +128,9 @@
   </div>
   <div class="black_row">
     <p><img src="images/red_take.png" alt="i">при строительстве дома подарок!</p>
-    <div class="up_arrow"><img src="images/go_up_arrow.png" alt="up" onclick="window.scrollTo(0,0);"></div>
+    <div class="up_arrow slow_effect"><img src="images/go_up_arrow.png" alt="up" onclick="window.scrollTo(0,0);"></div>
     <div class="sand_mail"><img src="images/green_mail.png" alt="mail"></div>
-    <div class="call_phone"><img src="images/green_phone.png" alt="phone"></div>
+    <div class="call_phone" id="call_my"><img src="images/green_phone.png" alt="phone"></div>
   </div>
   <!-- /body -->
   <!-- footer -->
@@ -139,10 +139,10 @@
       <div class="footer_nav_wrap">
         <a href="/"><img src="images/footer_logo.jpg" alt="logo" width="260px"></a>
         <ul>
-          <li><a href="#general">ГЛАВНАЯ</a></li>
-          <li><a href="#projects">ПРОЕКТЫ</a></li>
-          <li><a href="#bilding">СТРОИТЕЛЬСТВО</a></li>
-          <li><a href="#comments">ОТЗЫВЫ</a></li>
+          <li><a href="#general" class="slow_effect">ГЛАВНАЯ</a></li>
+          <li><a href="#projects" class="slow_effect">ПРОЕКТЫ</a></li>
+          <li><a href="#bilding" class="slow_effect">СТРОИТЕЛЬСТВО</a></li>
+          <li><a href="#comments" class="slow_effect">ОТЗЫВЫ</a></li>
         </ul>
       </div>
     </div>
@@ -185,16 +185,50 @@
   <!-- popup -->
   <div id="shadow_feedback" style="display: none;"></div>
 <div id="window_feedback" style="display: none;">
-	<div id="close_feedback"></div>
-	<form class="feedbackForm2 -visor-no-click" action="" method="post">
-		<p style="text-align:center; margin-bottom:10px; color: #030303;" id="form-title">Получить консультацию</p>
-
-		<input type="text" class="inline" name="name" placeholder="Ваше имя">
-		<input type="text" class="inline" name="tel" placeholder="Номер телефона">
-		<button class="button_submit" style="width: 230px; padding: 2px 21px 0px;">Отправить заявку</button>
+	<div class="close_feedback"></div>
+	<form class="feedbackForm2" action="" method="post">
+		<p style="text-align:center; margin-bottom:10px; " id="form-title">РАССЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</p>
+    <label for="name">ФИО</label>
+		<input type="text" class="inline" name="name">
+    <div style="clear: both;"></div>
+    <label for="tel">Телефон</label>
+		<input type="text" class="inline" name="tel">
+    <div style="clear: both;"></div>
+    <label for="E-mail">E-mail</label>
+    <input type="text" class="inline" name="E-mail">
+    <div style="clear: both;"></div>
+		<button class="button_submit">ОТПРАВИТЬ</button>
 	</form>
 </div>
-<div id="close_sale_baner"></div>
+<div id="window_feedback2" style="display: none;">
+	<div class="close_feedback"></div>
+	<form class="feedbackForm2" action="" method="post">
+		<p style="text-align:center; margin-bottom:10px; " id="form-title">ХОЧУ ПРОЕКТ</p>
+    <label for="name">ФИО</label>
+		<input type="text" class="inline" name="name">
+    <div style="clear: both;"></div>
+    <label for="tel">Телефон</label>
+		<input type="text" class="inline" name="tel">
+    <div style="clear: both;"></div>
+    <label for="E-mail">E-mail</label>
+    <input type="text" class="inline" name="E-mail">
+    <div style="clear: both;"></div>
+		<button class="button_submit">ОТПРАВИТЬ</button>
+	</form>
+</div>
+<div id="window_feedback3" style="display: none;">
+	<div class="close_feedback"></div>
+	<form class="feedbackForm2" action="" method="post">
+		<p style="text-align:center; margin-bottom:10px; " id="form-title">ОБРАТНЫЙ ЗВОНОК</p>
+    <label for="name">ФИО</label>
+		<input type="text" class="inline" name="name">
+    <div style="clear: both;"></div>
+    <label for="tel">Телефон</label>
+		<input type="text" class="inline" name="tel">
+    <div style="clear: both;"></div>
+		<button class="button_submit">ОТПРАВИТЬ</button>
+	</form>
+</div>
   <!-- script -->
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="js/slick.js" charset="utf-8"></script>
