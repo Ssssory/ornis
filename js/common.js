@@ -112,3 +112,29 @@ $(".feedbackForm").submit(function(){ // перехватываем все пр�
 			}
 			return false; // вырубаем стандартную отправку формы
 		});
+
+
+
+
+    $('.up_arrow').click(function(){
+                $('html, body').animate({scrollTop: 0}, 500);
+            }).scroolly([
+                {
+                    alias: 'hidden',
+//                    from: 'doc-top',
+                    to: 'doc-top + 100vp',
+                    css: {
+                        opacity: '0',
+                        bottom: '-100px'
+                    }
+                },
+                {
+                    alias: 'shown',
+                    from: 'doc-top + 100vp',
+                    to: 'doc-bottom',
+                    css: {
+                        opacity: '1',
+                        bottom: '30px'
+                    }
+                }
+            ]);

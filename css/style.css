@@ -245,8 +245,8 @@ header{
     top: 60px;
   }
   .up_arrow{
-    position: absolute;
-    top: 50px;
+    position: fixed;;
+    bottom: 50px;
     left: 5px;
   }
   .up_arrow img:hover, .sand_mail img:hover, .call_phone img:hover{cursor: pointer;}
@@ -457,9 +457,9 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
 .menu_nav li>a{
   font-size: 80px;
 }
-.up_arrow{
+/*.up_arrow{
   top: 10px;
-}
+}*/
 }
 
 @media only screen  and (max-width : 1849px) {/* and (min-width : 1141px) */
@@ -550,9 +550,9 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   width: 120px;
   top: 30px;
 }
-.up_arrow{
+/*.up_arrow{
   top: 10px;
-}
+}*/
 .up_arrow img{
   width: 100px;
 }
@@ -656,9 +656,9 @@ footer{
   top: 20px;
   margin-right: 20px;
 }
-.up_arrow{
+/*.up_arrow{
   top: 122px;
-}
+}*/
 .up_arrow img{
   width: 80px;
 }
