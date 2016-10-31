@@ -3,6 +3,7 @@ body{
   font-family: "GOSTA";
   color: #fdfcfc;
   font-size: 57px;
+  margin: 0px;
 }
 .container{
   max-width: 1920px;
@@ -352,26 +353,32 @@ footer{
 	top:0;
 	left:0;
 }
-#window_feedback{
+#window_feedback, #window_feedback2, #window_feedback3{
 	text-align: center;
 	position:fixed;
-	left:40%;
-	top:40%;
-	width:800px;
-	height:200px;
-	margin-left:-250px;
+	left: calc(50% - 250px);
+	top: 60vh; /*40%;*/
+    width: 500px;
+    height: 300px;
+
 	margin-top:-190px;
 	border:1px solid black;
 	display:none;
-	background:white;
+	background: #383637;
 	z-index:2000;
 	box-shadow: 0px 0px 10px #000000;
     color: #b2b2b2;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
 	font-size:20px;
-	font-family:'nerisbold';
+}
+.button_submit{
+  background: #b0060e;
+  color: #fff;
+  width: 175px;
+  height: 40px;
+  font-size: 30px;
+  font-family: "GOSTA";
+  margin-top: 10px;
+
 }
 #window_sale_baner{
 	text-align: center;
@@ -394,17 +401,41 @@ footer{
 	font-family:'nerisbold';
 }
 #window_sale_baner img{width:100%; margin: 0px auto;}
-#close_feedback{
+.close_feedback{
 	background: none; /*background: url(/images/close_icon.png) 50% 50% no-repeat transparent;*/
 	border: medium none currentColor;
 	position: absolute;
 	right: -40px;
 	top: -40px;
 	cursor: pointer;
-    z-index: 2000;
+  z-index: 2000;
 }
-#close_feedback:after{content:"x"; font-size: 30px;}
-.feedbackForm2{padding: 30px 20px 20px;}
+.close_feedback:after{content:"x"; font-size: 30px;}
+.feedbackForm2{
+  padding: 10px 30px;
+  font-family: "GOSTA";
+  font-size: 32px;
+}
+.feedbackForm2 p{
+  margin-top: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+.feedbackForm2 label{
+  float: left;
+  margin-top: 15px;
+}
+.feedbackForm2 input{
+  float: right;
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 5px;
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
+}
+
 .migomTextarea {
 	border: 1px solid #DDDAD3;
 	border-radius: 4px;
@@ -414,16 +445,7 @@ footer{
 	outline: medium none;
 	padding: 8px 12px;
 }
-#close_sale_baner{
-	border: medium none currentColor;
-	position: fixed;
-	right: 80px;
-	top: 30px;
-	cursor: pointer;
-  z-index: 3000;
-	display: none;
-}
-#close_sale_baner:after{content:"x"; font-size: 30px;}
+
 
 
 
@@ -676,7 +698,7 @@ footer{
   width: 30px;
 }
 }
-@media only screen and (max-width : 870px) {
+@media only screen and (max-width : 871px) {
   #contacts{
     text-align: center;
   }
@@ -706,7 +728,7 @@ footer{
     margin-left: calc(50% - 20%);
   }
 }
-@media only screen and (max-width : 561px) {
+@media only screen and (max-width : 870px) {
 .header_top{
   padding-bottom: 10px;
 }
@@ -756,7 +778,7 @@ footer{
   display: none;
 }
 }
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 560px) {
 .logo{
   width: 100%;
 }
