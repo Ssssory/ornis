@@ -149,13 +149,57 @@ header{
   right: 2%;
 }
 /* plan */
-.plan_block{
-
-}
+.plan_block{}
 .slider_plan{
   display: inline-block;
-  width: 50%
+  width: 40%;
+  text-align: center;
+}
+.jcarousel-item{
+  width: 100%;
+}
+#wrapper {
+	width: 100%;
+	padding-top: 0;
+	line-height: 20px;
+}
+.jcarousel-container {
+	float:left;
+	display: block;
+	position: relative;
+	margin:0;
+	padding:0;
+}
 
+.jcarousel-container-vertical {
+	width:  100%;
+	height: 500px;
+}
+
+.jcarousel-clip-vertical {
+	height: 500px;
+}
+
+.jcarousel-item {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	z-index: 1;
+  margin: 25px 0px;
+}
+.jcarousel-item img{
+	height: 200px;
+    width: 300px;
+}
+#newslist-next {
+	cursor: pointer;
+	top:0px;
+}
+
+#newslist-prev {
+	cursor: pointer;
+	outline: 0;
 }
 .plan_text{
   display: inline-block;
