@@ -24,33 +24,35 @@ $('a.slow_effect').click(function (event) {
 
 // popup
 $('#worck_pay').click(function() {
-
 				$('#shadow_feedback').show();
 				$('#window_feedback').show();
 				$('.close_feedback').css('display', 'block');
 			});
 
-
 $('#give_plan').click(function() {
-
 				$('#shadow_feedback').show();
 				$('#window_feedback2').show();
 				$('.close_feedback').css('display', 'block');
 			});
 
-      $('#number_to_call').click(function() {
-
-      				$('#shadow_feedback').show();
-      				$('#window_feedback3').show();
-      				$('.close_feedback').css('display', 'block');
-      			});
+$('#number_to_call').click(function() {
+				$('#shadow_feedback').show();
+				$('#window_feedback3').show();
+				$('.close_feedback').css('display', 'block');
+			});
 
 $('#call_my').click(function() {
-
         $('#shadow_feedback').show();
         $('#window_feedback3').show();
         $('.close_feedback').css('display', 'block');
       });
+
+$('#add_comment').click(function() {
+        $('#shadow_feedback').show();
+        $('#window_feedback4').show();
+        $('.close_feedback').css('display', 'block');
+      });
+
 $('.close_feedback').click(function() {
   $('#shadow_feedback').hide();
   if($('#window_feedback').css('display')=='block'){
@@ -62,7 +64,9 @@ $('.close_feedback').click(function() {
   if($('#window_feedback3').css('display')=='block'){
     $('#window_feedback3').hide();
   }
-
+  if($('#window_feedback4').css('display')=='block'){
+    $('#window_feedback4').hide();
+  }
   $('.close_feedback').css('display', 'none');
 });
 
@@ -72,7 +76,7 @@ $('.close_feedback').click(function() {
 
 
 
-// callback
+// callback возможный вариант обработки формы
 $(".feedbackForm").submit(function(){ // перехватываем все при событии отправки
 			var form = $(this); // запишем форму, чтобы потом не было проблем с this
 			var error = false; // предварительно ошибок нет
@@ -138,3 +142,64 @@ $(".feedbackForm").submit(function(){ // перехватываем все пр�
                     }
                 }
             ]);
+$('.sand_mail').click(function(){
+            $('html, body').animate({scrollTop: 0}, 500);
+        }).scroolly([
+            {
+                alias: 'hidden',
+//                    from: 'doc-top',
+                to: 'doc-top + 100vp',
+                css: {
+                    opacity: '0',
+                    bottom: '-100px'
+                }
+            },
+            {
+                alias: 'shown',
+                from: 'doc-top + 100vp',
+                to: 'doc-bottom',
+                css: {
+                    opacity: '1',
+                    bottom: '30px'
+                }
+            }
+        ]);
+$('.call_phone').click(function(){
+            $('html, body').animate({scrollTop: 0}, 500);
+        }).scroolly([
+            {
+                alias: 'hidden',
+//                    from: 'doc-top',
+                to: 'doc-top + 100vp',
+                css: {
+                    opacity: '0',
+                    bottom: '-100px'
+                }
+            },
+            {
+                alias: 'shown',
+                from: 'doc-top + 100vp',
+                to: 'doc-bottom',
+                css: {
+                    opacity: '1',
+                    bottom: '30px'
+                }
+            }
+        ]);
+
+$('.menu_nav').scroolly([
+                {
+                    to: 'con-top',
+                    css: {
+                        position: 'static',
+                        top: ''
+                    }
+                },
+                {
+                    from: 'con-top',
+                    css: {
+                        position: 'fixed',
+                        top: '0'
+                    }
+                }
+            ], $('.top_slider'));

@@ -121,7 +121,7 @@
           <p id="comment_text">"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"</p>
         </div>
         </div>
-      <a href="#" class="red_button">Добавить отзыв</a>
+      <a href="#" class="red_button" id="add_comment">Добавить отзыв</a>
       <div style="clear:both"></div>
   </div>
   <div class="map">
@@ -226,6 +226,22 @@
     <div style="clear: both;"></div>
     <label for="tel">Телефон</label>
 		<input type="text" class="inline" name="tel">
+    <div style="clear: both;"></div>
+		<button class="button_submit">ОТПРАВИТЬ</button>
+	</form>
+</div>
+<div id="window_feedback4" style="display: none;">
+	<div class="close_feedback"></div>
+	<form class="feedbackForm2" action="" method="post">
+		<p style="text-align:center; margin-bottom:10px; " id="form-title">ОБРАТНЫЙ ЗВОНОК</p>
+    <label for="name">ФИО</label>
+		<input type="text" class="inline" name="name">
+    <div style="clear: both;"></div>
+    <label for="E-mail">E-mail</label>
+    <input type="text" class="inline" name="E-mail">
+    <div style="clear: both;"></div>
+    <label for="comment">Текст</label>
+    <input type="text" class="inline" name="comment">
     <div style="clear: both;"></div>
 		<button class="button_submit">ОТПРАВИТЬ</button>
 	</form>

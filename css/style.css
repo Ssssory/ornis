@@ -58,6 +58,8 @@ header{
   background: #fdfdfd;
   width: 100%;
   height: 250px;
+  position: relative;
+  z-index: 3000;
 }
 .menu_nav li{
   text-decoration: none;
@@ -251,12 +253,12 @@ header{
   }
   .up_arrow img:hover, .sand_mail img:hover, .call_phone img:hover{cursor: pointer;}
   .sand_mail{
-    position: absolute;
+    position: fixed;;
     bottom: -19px;
     right: 10%;
   }
   .call_phone{
-    position: absolute;
+    position: fixed;;
     bottom: -14px;
     right: 2%;
   }
@@ -353,7 +355,7 @@ footer{
 	top:0;
 	left:0;
 }
-#window_feedback, #window_feedback2, #window_feedback3{
+#window_feedback, #window_feedback2, #window_feedback3, #window_feedback4{
 	text-align: center;
 	position:fixed;
 	left: calc(50% - 250px);
