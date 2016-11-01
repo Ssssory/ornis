@@ -239,6 +239,10 @@ function responsiveNav(menu) {
     navHide();
 	    $('.mobile_menu').css('display','block');
   });
+  $('.menu_nav a').click(function () {
+    navHide();
+	  $('.mobile_menu').css('display','block');
+  });
 
   function navShow() {
     nav.css({
