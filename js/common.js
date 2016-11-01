@@ -4,7 +4,9 @@ $(document).ready(function(){
   });
 
 $('.comment_slider_wrap').slick({
-  slidesToShow: 1
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 5000
 });
 //$('.slider_description').slick({
   //slidesToShow: 1
@@ -56,6 +58,7 @@ $('#call_my').click(function() {
         $('#shadow_feedback').show();
         $('#window_feedback3').show();
         $('.close_feedback').css('display', 'block');
+        return false;
       });
 
 $('#add_comment').click(function() {
@@ -218,7 +221,9 @@ $('.menu_nav').scroolly([
 // Гамбургер
 
 $(document).ready(function () {
-  responsiveNav('.menu_nav ul');
+  if (($("html").width()) < 870) {
+    responsiveNav('.menu_nav ul');
+  }
 
 });
 
