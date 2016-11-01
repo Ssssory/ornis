@@ -2,10 +2,21 @@ $(document).ready(function(){
   $('.top_slider').slick({
     dots: true
   });
-});
+
 $('.comment_slider_wrap').slick({
   slidesToShow: 1
-
+});
+//$('.slider_description').slick({
+  //slidesToShow: 1
+  //lazyLoad: 'ondemand'
+//  asNavFor: '.slider_right'
+//});
+//$('.slider_right').slick({
+//  slidesToShow: 3,
+//  slidesToScroll: 1,
+//  lazyLoad: 'ondemand'
+//  asNavFor: '.slider_description'
+//});
 });
 //плавная прокрутка до якоря
 $('a.slow_effect').click(function (event) {
