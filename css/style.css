@@ -57,6 +57,12 @@ header{
 .main_page_container{
   padding-top: 250px
 }
+.mobile_menu{
+  display: none;
+}
+.mobile-wrapper {
+  display: none;
+}
 .menu_nav{
   display: block;
   background: #fdfdfd;
@@ -893,8 +899,34 @@ footer{
 .red_phone .red_button{
   font-size: 20px;
 }
-.menu_nav{
+.mobile_menu{
+  display: block;
+}
+.mobile_menu img{
+  position: relative;
+  top: 8px;
+}
+.mobile-wrapper {
+  position: fixed;
   display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.menu_nav ul{
+  background: #fdfdfd;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  left: -600px;
+}
+.menu_nav ul li{
+  width: 90%;
+
+  display: block;
 }
 .slider_plan{
   width: 100%;

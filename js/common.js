@@ -214,3 +214,66 @@ $('.menu_nav').scroolly([
                     }
                 }
             ], $('.main_page_container'));
+
+// Гамбургер
+
+$(document).ready(function () {
+  responsiveNav('.menu_nav ul');
+
+});
+
+function responsiveNav(menu) {
+
+  var nav = $(menu);
+  var mobileNavWidth = $(nav).width();
+
+  var hambNav = $('.mobile_menu');
+  var mobileWrapper = $('.mobile-wrapper');
+
+  $(hambNav).click(function () {
+    navShow();
+    $('.mobile_menu').css('display','none');
+  });
+
+  $(mobileWrapper).click(function () {
+    navHide();
+	    $('.mobile_menu').css('display','block');
+  });
+
+  function navShow() {
+    nav.css({
+      'left': '0'
+    });
+    $('.menu_nav').css({
+      'height': '100%',
+      'width': '300px',
+      'top': '0px'
+    });
+    mobileWrapper.css({
+      'display': 'block'
+    });
+  }
+
+  function navHide() {
+    nav.css({
+      'left': -mobileNavWidth - 120 + 'px'
+    });
+    $('.menu_nav').css({
+      'height': '80px',
+      'width': '100%'
+    });
+    if  ($(window).scrollTop() == 0){
+      temp = $('header').css('height');
+      $('.menu_nav').css({
+        'top': temp
+        });
+    } else {
+      $('.menu_nav').css({
+        'top': '0px'
+        });
+    }
+    mobileWrapper.css({
+      'display': 'none'
+    });
+  }
+}
