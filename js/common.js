@@ -8,11 +8,14 @@ $('.comment_slider_wrap').slick({
   autoplay: true,
   autoplaySpeed: 5000
 });
-//$('.slider_description').slick({
-  //slidesToShow: 1
-  //lazyLoad: 'ondemand'
+tempWidth = $('header').css('width');
+$('.slider_complete').css('width','tempWidth');
+$('.slider_complete').slick({
+  slidesToShow: 1,
+  fade: true,
+  speed: 100
 //  asNavFor: '.slider_right'
-//});
+});
 //$('.slider_right').slick({
 //  slidesToShow: 3,
 //  slidesToScroll: 1,
