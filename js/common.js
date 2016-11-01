@@ -202,7 +202,7 @@ $('.menu_nav').scroolly([
                 {
                     to: 'con-top',
                     css: {
-                        position: 'static',
+                        position: 'absolute',
                         top: ''
                     }
                 },
@@ -213,4 +213,4 @@ $('.menu_nav').scroolly([
                         top: '0'
                     }
                 }
-            ], $('.top_slider'));
+            ], $('.main_page_container'));
