@@ -432,6 +432,7 @@ footer{
   color: #060606;
 }
 .footer_soc ul li a img{
+  width: 90px;
   position: relative;
   top: 30px;
 }
@@ -577,8 +578,35 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
                                                                   /* responsive */
 
 
-
+@media only screen and (min-width : 1920px){
+  .proj_slider{
+    padding-left: 0px;
+  }
+  .slider_complete{
+    width: 1500px;
+    margin: auto;
+  }
+  .jcarousel-container-vertical{
+    height: 1000px;
+  }
+  .proj_slider{
+    height: 900px;
+  }
+  .jcarousel-clip-vertical{
+    height: 1000px;
+  }
+  .jcarousel-item{
+    height: 500px;
+  }
+  .jcarousel-item img{
+    height: 400px;
+    width: 600px;
+  }
+}
 @media only screen and (min-width : 1140px) and (max-width : 1549px) {
+  .text_a{
+    font-size: 30px;
+  }
   .slider_complete{
     width: 1000px;
     margin: auto;
@@ -607,6 +635,22 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
 @media only screen and (min-width : 1850px) and (max-width : 1919px) {
 .menu_nav li>a{
   font-size: 80px;
+}
+.jcarousel-container-vertical{
+  height: 1000px;
+}
+.proj_slider{
+  height: 900px;
+}
+.jcarousel-clip-vertical{
+  height: 1000px;
+}
+.jcarousel-item{
+  height: 500px;
+}
+.jcarousel-item img{
+  height: 400px;
+  width: 600px;
 }
 }
 
@@ -688,6 +732,9 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
 .comment_slider_wrap .slick-prev{
   left: 10px;
   top: 260px;
+}
+.text_a{
+  font-size: 36px;
 }
 .slider_right img{
   position: absolute;
@@ -771,22 +818,27 @@ footer{
   top: 12px;
 }
 }
-@media only screen and (min-width : 1550px) and (max-width : 1920px) {
-  body{
-    font-size: 40px;
+@media only screen and (min-width : 1140px) and (max-width : 1549px) {
+  .text_a{
+    font-size: 30px;
   }
+}
+@media only screen and (min-width : 1550px) and (max-width : 1920px) {
+/*.slider_complete{
+    font-size: 40px;
+  }*/
   .slider_complete{
     width: 1500px;
     margin: auto;
   }
-  .proj_slider .slick-prev{
+/*  .proj_slider .slick-prev{
     top: 450px;
     left: 60%;
   }
   .proj_slider .slick-next{
     top: 450px;
     right: 25%;
-  }
+  }*/
 }
 @media only screen  and (max-width : 1140px) {
 .main_page_container{
@@ -805,7 +857,9 @@ footer{
   width: 1000px;
   text-align: center;
 }
-
+.text_a{
+  font-size: 30px;
+}
 .slider_description{
   width: 49%;
   display: inline-block;
