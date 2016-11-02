@@ -1067,12 +1067,19 @@ footer{
 .red_phone .red_button{
   font-size: 20px;
 }
+.menu_nav{
+  height: 40px;
+}
+.main_page_container{
+  padding-top: 40px;
+}
 .mobile_menu{
   display: block;
 }
 .mobile_menu img{
+  width: 32px;
   position: relative;
-  top: 8px;
+  top: 4px;
 }
 .mobile-wrapper {
   position: fixed;
@@ -1093,14 +1100,26 @@ footer{
 }
 .menu_nav ul li{
   width: 90%;
-
   display: block;
+}
+.about .text p{
+  padding-left: 10px;
+  font-size: 20px;
+}
+.text_a p{
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: left;
 }
 .slider_plan{
   width: 100%;
 }
 .plan_text{
   width: 100%;
+}
+.plan_text p{
+  padding-left: 10px;
+  font-size: 20px;
 }
 .slick-prev{
   display: none;
@@ -1120,7 +1139,9 @@ footer{
   float: none;
   padding: 10px 30px;
 }
-
+.comment_slider img{
+  margin: 0px;
+}
 .slider_complete{
   width: 537px;
   text-align: center;

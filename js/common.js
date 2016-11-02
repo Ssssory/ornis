@@ -271,7 +271,7 @@ function responsiveNav(menu) {
       'left': -mobileNavWidth - 120 + 'px'
     });
     $('.menu_nav').css({
-      'height': '80px',
+      'height': '40px',
       'width': '100%'
     });
     if  ($(window).scrollTop() == 0){
