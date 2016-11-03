@@ -1223,6 +1223,9 @@ footer{
 .footer_contact ul li .img_wrap{
   margin-right: 5px;
 }
+.footer_soc ul li a img{
+  top: 2px;
+}
 .slider_complete{
   width: 300px;
 }
