@@ -13,7 +13,7 @@ $('.slider_complete').css('width','tempWidth');
 $('.slider_complete').slick({
   slidesToShow: 1,
   fade: true,
-  speed: 100
+  cssEase: 'linear'
 //  asNavFor: '.slider_right'
 });
 //$('.slider_right').slick({
@@ -33,7 +33,13 @@ $('a.slow_effect').click(function (event) {
 
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
 			top = $(id).offset().top;
-
+    //вычитаем из этой высоты, высоту плавающего блока меню если меню не мобильное
+      correct = $('.menu_nav').height();
+      if($('html').width()>721){  //на 720px меню становится мобильным
+        top -= correct;
+      }else{
+        top -= 40
+      }
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
@@ -137,9 +143,7 @@ $(".feedbackForm").submit(function(){ // перехватываем все пр�
 
 
 
-    $('.up_arrow').click(function(){
-                $('html, body').animate({scrollTop: 0}, 500);
-            }).scroolly([
+    $('.up_arrow').scroolly([
                 {
                     alias: 'hidden',
 //                    from: 'doc-top',
@@ -152,16 +156,15 @@ $(".feedbackForm").submit(function(){ // перехватываем все пр�
                 {
                     alias: 'shown',
                     from: 'doc-top + 100vp',
-                    to: 'doc-bottom',
+                    to: 'doc-bottom + 50vp',
                     css: {
                         opacity: '1',
                         bottom: '30px'
                     }
                 }
+
             ]);
-$('.sand_mail').click(function(){
-            $('html, body').animate({scrollTop: 0}, 500);
-        }).scroolly([
+$('.sand_mail').scroolly([
             {
                 alias: 'hidden',
 //                    from: 'doc-top',
@@ -180,7 +183,9 @@ $('.sand_mail').click(function(){
                     bottom: '30px'
                 }
             }
-        ]);
+        ], $('.page_body'));
+
+
 $('.call_phone').click(function(){
             $('html, body').animate({scrollTop: 0}, 500);
         }).scroolly([
@@ -199,11 +204,13 @@ $('.call_phone').click(function(){
                 to: 'doc-bottom',
                 css: {
                     opacity: '1',
-                    bottom: '30px'
+                    bottom: '130px'
                 }
             }
-        ]);
+        ], $('.page_body'));
 
+
+a = $('.container');
 $('.menu_nav').scroolly([
                 {
                     to: 'con-top',
@@ -219,7 +226,7 @@ $('.menu_nav').scroolly([
                         top: '0'
                     }
                 }
-            ], $('.main_page_container'));
+            ], $('.page_body'));
 
 // Гамбургер
 
@@ -274,8 +281,8 @@ function responsiveNav(menu) {
       'height': '40px',
       'width': '100%'
     });
-    if  ($(window).scrollTop() == 0){
-      temp = $('header').css('height');
+    temp = $('header').css('height');
+    if  ($(window).scrollTop() <= parseInt(temp)){
       $('.menu_nav').css({
         'top': temp
         });
