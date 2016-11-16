@@ -8,7 +8,7 @@ body{
   background: #030303;
   font-family: "GOSTA";
   color: #fdfcfc;
-  font-size: 40px;
+  font-size: 38px;
   margin: 0px;
   width: 70%;
   margin: auto;
@@ -28,8 +28,11 @@ header{
   margin: auto;
 }
 .logo{
-  width: 32.68%;
+  width: 45%;
   display: inline-block;
+}
+.logo img{
+  width: 100%;
 }
 .contact_on_top{
   float: right;
@@ -53,7 +56,7 @@ header{
 .red_phone .red_button{
   width: 700px;
   height: 130px;
-  font-size: 78px;
+  font-size: 68px;
   padding: 15px 40px;
 }
 .main_page_container{
@@ -65,30 +68,21 @@ header{
 .mobile-wrapper {
   display: none;
 }
-
-
-
-.menu_nav ul{
-  width: 90%;
-  margin: auto;
-  padding-top: 21px;
-}
 .menu_nav{
   display: block;
   background: #fdfdfd;
   width: 70%;
-  height: 250px;
+  height: 160px;
   position: absolute;
   z-index: 2000;
 }
 .menu_nav li{
   text-decoration: none;
   display: inline-block;
-  height: 160px;
   margin: 24px 0;
 }
 .menu_nav ul{
-  padding-top: 50px;
+  padding-top: 27px;
   width: 90%;
   margin: auto;
   padding-left: 0px;
@@ -104,7 +98,7 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   color: #040404;
-  font-size: 70px;
+  font-size: 60px;
 }
 
   /* contant */
@@ -215,14 +209,14 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
   position: relative;
 }
 .call_back_block h3{
-    padding-top: 70px;
-    font-size: 135px;
+    padding-top: 60px;
+    font-size: 110px;
     line-height: 120px;
     margin: 0px;
 }
 .call_back_block h4{
-  padding-top: 93px;
-  font-size: 60px;
+  padding-top: 90px;
+  font-size: 55px;
     margin: 0px;
 }
 .call_back_block p{
@@ -230,8 +224,8 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
     margin: 0px;
 }
 .call_back_block a{
-  width: 500px;
-  font-size: 86px;
+  width: 400px;
+  font-size: 66px;
   text-transform: uppercase;
   text-align: center;
   padding: 15px 0px;
@@ -298,7 +292,7 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 #newslist-prev {
 	cursor: pointer;
 	outline: 0;
-  margin-left: 8vw;
+  margin-left: 5vw;
 }
 .plan_text{
   display: inline-table;
@@ -661,7 +655,6 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   display: inline-table;
   vertical-align: top;
   margin-left: 1%;
-  font-size: 40px;
   text-align: left;
 }
 .text_a p {
@@ -737,7 +730,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   font-size: 90px;
 }
 footer{
-  font-size: 32px;
+  font-size: 30px;
 }
 footer .container{
   width: 90%;
@@ -906,9 +899,9 @@ footer .container{
 
   }
 }
-@media only screen and (max-width : 1550px){
+@media only screen and (max-width : 1920px){
   body{
-    font-size: 36px;
+    font-size: 34px;
   }
   .logo img{
     width: 300px;
@@ -966,9 +959,6 @@ footer .container{
     font-size: 50px;
     padding: 10px 0px;
     top: 65px;
-  }
-  .text_a{
-    font-size: 36px;
   }
   .slider_right {
     height: 450px;
@@ -1062,32 +1052,16 @@ footer .container{
   }
 
 }
-@media only screen and (min-width : 1210px) and (max-width : 1487px) {
-  .footer_contact{
 
-  }
-  .footer_contact ul{
-
-  }
-  .footer_contact {
-
-  }
-  .footer_soc{
-
-  }
-}
-@media only screen and (max-width : 1210px) {
+@media only screen and (max-width : 1580px) {
   body{
-    font-size: 32px;
+    font-size: 28px;
   }
   .menu_nav li {
     margin: 27px 0;
 }
   .menu_nav li>a{
-    font-size: 46px;
-  }
-  .text_a{
-    font-size: 32px;
+    font-size: 42px;
   }
   .jcarousel-item{
     width: 100%;
@@ -1151,8 +1125,12 @@ footer .container{
   .call_back_block h2{
     font-size: 46px;
   }
-  .call_back_block p {
+  .call_back_block h4 {
+    padding-top: 60px;
     font-size: 38px;
+}
+  .call_back_block p {
+    font-size: 32px;
   }
   .comment_slider p{
     width: 250px;
@@ -1189,12 +1167,12 @@ footer .container{
 
   }
   .footer_soc{
-    width: 21%;
+    width: 24%;
   }
 }
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 1332px) {
   body{
-    font-size: 24px;
+    font-size: 22px;
   }
   .container{
     width: 100%;
@@ -1219,7 +1197,7 @@ footer .container{
     padding-top: 60px;
   }
   .text_a{
-    font-size: 24px;
+    font-size: 22px;
   }
   .slider_complete_wrap {
     height: 340px;
@@ -1257,7 +1235,7 @@ footer .container{
   }
   .plan_text{
     padding-left: 0px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .call_back_block{
     height: 250px;
@@ -1343,25 +1321,60 @@ footer .container{
 
   }
 }
-@media only screen and (max-width : 884px){
-  .text_a{
-    width: 48%;
-    font-size: 22px;
+@media only screen and (max-width : 1098px){
+  body{
+    width: 80%;
+  }
+  .logo img{
+    width: 100%;
+  }
+  .contact_on_top {
+    margin-top: 30px;
+  }
+  .red_phone .red_button {
+    font-size: 26px;
+  }
+  .menu_nav{
+    width: 80%;
+  }
+  .menu_nav li>a {
+    font-size: 26px;
+  }
+  .text h1{
+    font-size: 30px;
+  }
+  .proj_slider h2{
+    padding-left: 50px;
+  }
+  .call_back_block h3{
+    font-size: 60px;
+  }
+  .call_back_block h4{
+    padding-top: 40px
+  }
+  .call_back_block p {
+    font-size: 28px;
+  }
+  .proj_slider .slick-next {
+    right: 14%;
+  }
+  .comment_slider_wrap .slick-next {
+    right: calc(70% - 90px);
   }
   .slider_right a img {
     bottom: -53px;
-}
+  }
   .slider_right a:nth-child(2) img{
     left: 60px;
   }
   .slider_right a:nth-child(3) img{
     left: 120px;
   }
-  .call_back_block h4{
-    padding-top: 40px
-  }
   #newslist-prev{
-    margin-left: 7vw;
+    margin-left: 4%;
+  }
+  .black_row>p {
+    font-size: 36px;
   }
   footer{
     font-size: 20px;
@@ -1373,17 +1386,8 @@ footer .container{
   .footer_nav_wrap ul>li{
     display: inline-block;
   }
-  .footer_nav_wrap img{
-
-  }
   .footer_nav_wrap ul{
     text-align: center;
-  }
-  .footer_nav_wrap img{
-
-  }
-  .footer_contact{
-
   }
   .footer_contact ul{
 
@@ -1402,6 +1406,42 @@ footer .container{
   }
   .footer_soc ul li a img{
 
+  }
+}
+@media only screen and (min-width : 721px) and (max-width : 970px) {
+  .slider_complete_wrap {
+    height: 560px;
+  }
+  .text_a{
+    width: 98%;
+    font-size: 20px;
+    min-height: 230px;
+  }
+  .call_back_block a{
+    right: calc(50% - 130px);
+  }
+  .proj_slider h2 {
+    margin-top: 0px;
+  }
+  .slider_right a img{
+    position: absolute;
+    width: 400px;
+    margin-left: calc(50% - 200px);
+    bottom: 40px;
+  }
+  .slider_right a:nth-child(2) img{
+    display: none;
+  }
+  .slider_right a:nth-child(3) img{
+    display: none;
+  }
+  .proj_slider .slick-prev{
+    top: 650px;
+    left: 30%;
+  }
+  .proj_slider .slick-next{
+    top: 650px;
+    right: 30%;
   }
 }
 @media only screen and (max-width : 720px) {
