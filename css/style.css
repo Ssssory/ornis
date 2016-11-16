@@ -8,7 +8,7 @@ body{
   background: #030303;
   font-family: "GOSTA";
   color: #fdfcfc;
-  font-size: 57px;
+  font-size: 40px;
   margin: 0px;
   width: 70%;
   margin: auto;
@@ -24,7 +24,8 @@ header{
   height: auto;
 }
 .header_top{
-  display: block;
+  width: 90%;
+  margin: auto;
 }
 .logo{
   width: 32.68%;
@@ -52,7 +53,7 @@ header{
 .red_phone .red_button{
   width: 700px;
   height: 130px;
-  font-size: 86px;
+  font-size: 78px;
   padding: 15px 40px;
 }
 .main_page_container{
@@ -63,6 +64,14 @@ header{
 }
 .mobile-wrapper {
   display: none;
+}
+
+
+
+.menu_nav ul{
+  width: 90%;
+  margin: auto;
+  padding-top: 21px;
 }
 .menu_nav{
   display: block;
@@ -75,7 +84,8 @@ header{
 .menu_nav li{
   text-decoration: none;
   display: inline-block;
-  margin: 35px 0;
+  height: 160px;
+  margin: 24px 0;
 }
 .menu_nav ul{
   padding-top: 50px;
@@ -94,12 +104,12 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   color: #040404;
-  font-size: 86px;
+  font-size: 70px;
 }
 
   /* contant */
 .page_body{
-  padding-top: 250px;
+  padding-top: 160px;
 }
 .top_slider img{
   width: 100%;
@@ -146,7 +156,7 @@ header{
 }
 .slider_complete{
   position: relative;
-  top: -350px;
+  top: -240px;
   text-align: center;
 }
 .slider_description{
@@ -159,7 +169,7 @@ header{
 }
 .slider_right{
   width: 49%;
-  height: 600px;
+  height: 500px;
   display: inline-block;
   position: relative;
 }
@@ -176,10 +186,10 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 .slider_right a:nth-child(2) img{
   position: absolute;
   width: 70%;
-  bottom: 300px;
+  top: -60px;
   opacity: 0.7;
   z-index: 2;
-  left: 180px;
+  left: 150px;
   -webkit-box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
@@ -187,13 +197,13 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 .slider_right a:nth-child(3) img{
   position: absolute;
   width: 60%;
-  bottom: 520px;
+  top: -190px;
   opacity: 0.3;
   z-index: 1;
-  left: 380px;
+  left: 300px;
 }
 .slider_complete .slick-slide{
-  padding-top: 300px;
+  padding-top: 200px;
 }
 .call_back_block{
   width: 90%;
@@ -206,13 +216,13 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
 }
 .call_back_block h3{
     padding-top: 70px;
-    font-size: 172px;
+    font-size: 135px;
     line-height: 120px;
     margin: 0px;
 }
 .call_back_block h4{
-  padding-top: 70px;
-    font-size: 86px;
+  padding-top: 93px;
+  font-size: 60px;
     margin: 0px;
 }
 .call_back_block p{
@@ -664,7 +674,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   width: 64px;
   height: 59px;
   background: url('../images/left_arrow.png');
-  top: 900px;
+    top: 780px;
   left: 60%;
   z-index: 10;
 }
@@ -672,7 +682,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   width: 64px;
   height: 59px;
   background: url('../images/right_arrow.png');
-  top: 900px;
+    top: 780px;
   right: 25%;
   z-index: 10;
 }
@@ -709,12 +719,63 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
 	background-image: url(blank.gif);
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
 	}
+/* перенос со 1920 */
+.jcarousel-container-vertical{
+  height: 700px;
+}
+.jcarousel-clip-vertical{
+  height: 700px;
+}
+.jcarousel-item{
+  height: 300px;
+}
+.comment_block .red_button{
+  margin-right: 11%;
+  margin-top: -10px;
+}
+.black_row>p{
+  font-size: 90px;
+}
+footer{
+  font-size: 32px;
+}
+footer .container{
+  width: 90%;
+  margin-left: 5%;
+}
+.footer_nav {
+  top: -43px;
+}
+.footer_contact ul li .img_wrap img{
 
+}
+.footer_contact ul li .img_wrap{
+  top: -3px;
+}
+.footer_contact ul:nth-child(2) li:first-child .img_wrap svg{
+  width: 17px;
+}
+.footer_contact ul:nth-child(2) li:nth-child(2) .img_wrap{
+  top: 3px;
+}
+.footer_contact ul li .img_wrap svg{
+  width: 25px;
+}
+.footer_contact{
+
+}
+.footer_contact ul li p{
+  margin: 0px;
+  display: inline-table;
+  vertical-align: top;
+  line-height: 30px;
+  width: calc(100% - 50px);
+}
 
                                                                   /* responsive */
 
 @media only screen and (max-width : 1920px) {
-  body{
+/*  body{
     font-size: 40px;
   }
   .container{
@@ -838,7 +899,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   }
   .footer_soc ul li a img{
 
-  }
+  }*/
 }
 @media only screen and (min-width : 1550px) and (max-width : 1717px){
   .footer_contact {
