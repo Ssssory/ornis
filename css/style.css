@@ -360,7 +360,7 @@ box-shadow: 7px 0px 7px 0px rgba(0,0,0,0.75);
       cursor: pointer;
     }
     .comment_slider_wrap .slick-next{
-      right: calc(50% - 90px);
+      right: calc(55% - 90px);
       top: 420px;
       background: url(../images/right_arrow.png);
       width: 64px;
@@ -520,7 +520,7 @@ footer p{
 .share{
   position: relative;
   text-align: left;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .footer_soc ul{
   text-align: justify;
@@ -529,9 +529,6 @@ footer p{
 }
 .footer_soc ul li{
   display: inline-block;
-}
-.footer_soc ul li a img{
-
 }
 .footer_soc .img_wrap{
   width: 42px;
@@ -547,7 +544,7 @@ footer p{
   display: none;
   position: absolute;
   left: 0;
-  bottom: 3px;
+  bottom: 10px;
   text-align: center;
   padding: 5px;
   border: 1px solid #cccccc;
@@ -683,7 +680,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   height: 59px;
   background: url('../images/right_arrow.png');
     top: 780px;
-  right: 25%;
+  right: 24%;
   z-index: 10;
   background-repeat: no-repeat;
 }
@@ -735,7 +732,7 @@ box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.75);
   margin-top: -10px;
 }
 .black_row .container>p{
-  font-size: 90px;
+  font-size: 70px;
 }
 footer{
   font-size: 30px;
@@ -893,7 +890,7 @@ fill: #b00810;
   }
   .comment_slider_wrap .slick-prev{
     top: 320px;
-    left: calc(50% - 150px);
+    left: calc(58% - 150px);
   }
   .comment_slider_wrap .slick-next{
     top: 320px;
@@ -991,13 +988,15 @@ fill: #b00810;
     margin-top: 50px;
   }
   .proj_slider .slick-prev{
-    top: 670px
+    top: 620px
   }
   .proj_slider .slick-next{
-    top: 670px
+    top: 620px
   }
   .call_back_block h3{
     font-size: 70px;
+    padding-top: 50px;
+    line-height: 70px;
   }
   #wrapper {
   	width: 100%;
@@ -1058,6 +1057,14 @@ fill: #b00810;
   }
   .comment_block .red_button{
     margin-right: 2%;
+  }
+  .comment_slider_wrap .slick-prev {
+    top: 320px;
+    left: calc(65% - 150px);
+  }
+  .comment_slider_wrap .slick-next {
+    top: 320px;
+    right: calc(45% - 90px);
   }
   .map{
     height: 220px;
@@ -1364,7 +1371,7 @@ fill: #b00810;
     margin-right: 20px;
   }
   .black_row .container>p {
-    font-size: 28px;
+    font-size: 26px;
   }
   .share{
     text-align: center;
@@ -1520,7 +1527,8 @@ fill: #b00810;
     font-size: 28px;
   }
   .black_row .container>p{
-    font-size: 30px;
+    font-size: 28px;
+    margin-top: 10px;
   }
   .comment_slider_wrap .slick-prev{
     left: calc(40% - 150px);
