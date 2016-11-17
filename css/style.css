@@ -773,11 +773,11 @@ footer{
   width: calc(100% - 50px);
 }
 
-.footer_soc .img_wrap a svg path{
+.footer_soc .img_wrap a>svg path{
 fill: #b00810;
 }
-.footer_soc .img_wrap:hover a svg path{
-fill: #4d76a1;  #3b579d
+.footer_soc .img_wrap:hover a>svg path{
+fill: #4d76a1;
 }
 .img_wrap:hover #f svg path{
 fill: #3b579d;
@@ -785,8 +785,8 @@ fill: #3b579d;
 .img_wrap:hover #ok svg path{
 fill:#f6881f;
 }
-.img_wrap:hover #inst svg .b .c{
-fill: url(#b);
+#inst:not(:hover) span svg path{
+fill: #b00810;
 }
 .footer_soc ul:after {
     content: "";
@@ -1253,7 +1253,7 @@ fill: url(#b);
     right: 14%;
   }
   .comment_slider_wrap .slick-next {
-    right: calc(70% - 90px);
+    right: calc(60% - 90px);
   }
   .slider_right a img {
     bottom: -53px;
@@ -1353,6 +1353,12 @@ fill: url(#b);
     margin-right: 0%;
     font-size: 28px;
     margin-top: 2px;
+  }
+  .comment_slider_wrap .slick-prev {
+    left: calc(40% - 150px);
+}
+  .comment_slider_wrap .slick-next {
+    right: calc(70% - 90px);
   }
   .black_row .container>p>img{
     margin-right: 20px;
