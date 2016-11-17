@@ -51,9 +51,9 @@
     <!-- body -->
     <div class="container page_body">
     <div class="top_slider">
-      <div class="slider_item"><img src="images/1112.jpg" alt="slide" width="100%" height="31%"></div>
-      <div class="slider_item"><img src="images/1113.jpg" alt="slide" width="100%" height="31%"></div>
-      <div class="slider_item"><img src="images/1114.jpg" alt="slide" width="100%"></div>
+      <div class="slider_item" id="data_img_1"><img src="images/1112.jpg" alt="slide" width="100%"></div>
+      <div class="slider_item" id="data_img_2"><img src="images/1113.jpg" alt="slide" width="100%"></div>
+      <div class="slider_item" id="data_img_3"><img src="images/1114.jpg" alt="slide" width="100%"></div>
     </div>
     <div class="wrap_page">
     <div class="about" id="general">
@@ -194,13 +194,18 @@
      </div>
       <div style="clear:both"></div>
     </div>
+    </div>
+    </div>
     <div class="call_back_block">
+      <div class="container">
       <a href="javascript:void(0);" class="red_button" id="give_plan">хочу проект</a>
       <h3>ЗАКАЗАТЬ ПРОЕКТ</h3>
       <p>Оставьте свои контакты и мы вам перезвоним</p>
       <div style="clear:both"></div>
     </div>
+    </div>
   <div class="plan_block" id="bilding">
+    <div class="container">
     <div style="clear:both"></div>
     <div class="slider_plan">
       <!-- Begin Wrapper -->
@@ -247,13 +252,17 @@
     </div>
     <div style="clear:both"></div>
   </div>
+  </div>
     <div class="call_back_block">
+      <div class="container">
       <a href="javascript:void(0);" class="red_button" id="worck_pay">рассчитать</a>
       <h4>РАССЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</h4>
       <p>Оставьте свои контакты и мы вам перезвоним</p>
       <div style="clear:both"></div>
+      </div>
     </div>
     <div class="comment_block" id="comments">
+      <div class="container">
       <h2 style="text-align: center;">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
         <div class="comment_slider_wrap">
           <div class="comment_slider">
@@ -270,14 +279,18 @@
         <a href="javascript:void(0);" class="red_button" id="add_comment">Добавить отзыв</a>
         <div style="clear:both"></div>
     </div>
+    </div>
     <div class="map">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sV7K3P6hnvl0eLtJIrq-qKA0PTEqYxOl&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
     </div>
     <div class="black_row">
+      <div class="container">
       <p><img src="images/red_take.png" alt="i">при строительстве дома - подарок!</p>
       <div class="up_arrow"><a href="#top_page" class="slow_effect"><img src="images/go_up_arrow2.png" alt="up"></a></div>
       <div class="sand_mail"><a href="mailto:ornis31@mail.ru"><img src="images/green_mail.png" alt="mail"></a></div>
       <div class="call_phone" ><a href="javascript:void(0);" id="call_my"><img src="images/green_phone.png" alt="phone"></a></div>
+    </div>
     </div>
   </div>
 </div>
@@ -325,10 +338,46 @@
         <div class="share">
         <p>Мы в соцсетях:</p>
         <ul>
-          <li><div class="img_wrap"><a href="https://vk.com/ornis31" target="_blank"><img src="images/VK.svg" alt="vk"></a><div class="description"><a href="https://vk.com/ornis31" target="_blank">https://vk.com/ornis31</a></div></div></li>
-          <li><div class="img_wrap"><a href="https://www.facebook.com/ornis31/" target="_blank"><img src="images/FB.svg" alt="f"></a><div class="description"><a href="https://www.facebook.com/ornis31/" target="_blank">https://www.facebook.com/ornis31/</a></div></div></li>
-          <li><div class="img_wrap"><a href="https://www.ok.ru/ornis31" target="_blank"><img src="images/OK.svg" alt="ok"></a><div class="description"><a href="https://www.ok.ru/ornis31" target="_blank">https://www.ok.ru/ornis31</a></div></div></li>
-          <li><div class="img_wrap"><a href="https://www.instagram.com/ornis31/" target="_blank"><img src="images/INSTA.svg" alt="instagram"></a><div class="description"><a href="https://www.instagram.com/ornis31/" target="_blank">https://www.instagram.com/ornis31/</a></div></div></li>
+          <li>
+            <div class="img_wrap">
+              <a href="https://vk.com/ornis31" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.a{fill:#4d76a1;}</style></defs><title>VK</title><path class="a" d="M37.24,0H2.76A2.77,2.77,0,0,0,0,2.76V37.24A2.77,2.77,0,0,0,2.76,40H37.24A2.77,2.77,0,0,0,40,37.24V2.76A2.77,2.77,0,0,0,37.24,0ZM31.46,28.77l-3.51,0a2.48,2.48,0,0,1-1.75-.53c-1.31-.9-2.55-3.24-3.51-2.94s-.95,2.42-.95,2.42a1.15,1.15,0,0,1-.22.69,1.32,1.32,0,0,1-.72.31H19.24a9,9,0,0,1-6.51-3C9.4,22.34,6.47,15.47,6.47,15.47s-.17-.45,0-.67.77-.26.77-.26l3.75,0a1.64,1.64,0,0,1,.61.25,1.17,1.17,0,0,1,.33.44,25.24,25.24,0,0,0,1.41,2.92c1.57,2.71,2.3,3.3,2.83,3,.78-.42.54-3.83.54-3.83a3.81,3.81,0,0,0-.39-1.79,1.78,1.78,0,0,0-1.17-.59c-.21,0,.14-.52.59-.74A8.5,8.5,0,0,1,19,13.86a6.69,6.69,0,0,1,1.84.18c1.29.31.85,1.52.85,4.41,0,.93-.17,2.23.5,2.66.29.18,1,0,2.75-3a22.77,22.77,0,0,0,1.46-3.08,1.1,1.1,0,0,1,.35-.42.9.9,0,0,1,.51-.09l4,0s1.19-.14,1.38.39-.44,1.87-2.06,4c-2.65,3.53-2.94,3.2-.75,5.24a11.7,11.7,0,0,1,2.61,3C33.29,28.66,31.46,28.77,31.46,28.77Z"/></svg>
+              </a>
+              <div class="description">
+                <a href="https://vk.com/ornis31" target="_blank">https://vk.com/ornis31</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <a href="https://www.facebook.com/ornis31/" target="_blank" id="f">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.a{fill:#4d6fa9;}</style></defs><title>FB</title><path class="a" d="M37.24,0H2.76A2.77,2.77,0,0,0,0,2.76V37.24A2.77,2.77,0,0,0,2.76,40H19.31V26.21H13.79v-6.9h5.52V15.17A8.27,8.27,0,0,1,26.9,6.9h6.9v6.9H27.59a1.38,1.38,0,0,0-1.38,1.38v4.14h6.9v6.9h-6.9V40h11A2.77,2.77,0,0,0,40,37.24V2.76A2.77,2.77,0,0,0,37.24,0Z"/></svg>
+              </a>
+              <div class="description">
+                <a href="https://www.facebook.com/ornis31/" target="_blank">https://www.facebook.com/ornis31/</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <a href="https://www.ok.ru/ornis31" target="_blank" id="ok">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.a{fill:#f6881f;}</style></defs><title>OK</title><path class="a" d="M20,16.58a3.45,3.45,0,1,0-3.47-3.41A3.42,3.42,0,0,0,20,16.58Z"/><path class="a" d="M37.24,0H2.76A2.77,2.77,0,0,0,0,2.76V37.24A2.77,2.77,0,0,0,2.76,40H37.24A2.77,2.77,0,0,0,40,37.24V2.76A2.77,2.77,0,0,0,37.24,0ZM20,6.08a7,7,0,1,1-7.07,7A7,7,0,0,1,20,6.08Zm7.89,16.86a8.47,8.47,0,0,1-3.05,2,14.34,14.34,0,0,1-3.46.78l.37.4c1.6,1.61,3.21,3.21,4.81,4.83a1.59,1.59,0,0,1,.36,1.87,1.9,1.9,0,0,1-1.78,1.11A1.73,1.73,0,0,1,24,33.32c-1.21-1.22-2.44-2.41-3.63-3.65-.35-.36-.51-.29-.82,0-1.22,1.25-2.45,2.49-3.7,3.71a1.55,1.55,0,0,1-1.87.34A1.89,1.89,0,0,1,12.94,32a1.75,1.75,0,0,1,.59-1.17l4.75-4.76.36-.38a10.81,10.81,0,0,1-5.77-2.06c-.21-.16-.42-.32-.61-.5a1.73,1.73,0,0,1,2-2.82,3.51,3.51,0,0,1,.48.28,9.46,9.46,0,0,0,10.48.1,2.85,2.85,0,0,1,1-.53,1.6,1.6,0,0,1,1.84.73A1.55,1.55,0,0,1,27.92,22.94Z"/></svg>
+              </a>
+              <div class="description">
+                <a href="https://www.ok.ru/ornis31" target="_blank">https://www.ok.ru/ornis31</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <a href="https://www.instagram.com/ornis31/" target="_blank" id="inst" style="position: relative">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{fill:url(#b);}</style><clipPath id="a"><path class="a" d="M37.24,0H2.76A2.77,2.77,0,0,0,0,2.76V37.24A2.77,2.77,0,0,0,2.76,40H37.24A2.77,2.77,0,0,0,40,37.24V2.76A2.77,2.77,0,0,0,37.24,0ZM32.15,25a9,9,0,0,1-.57,3A6.25,6.25,0,0,1,28,31.58a9,9,0,0,1-3,.57c-1.3.06-1.72.07-5,.07s-3.74,0-5-.07a9,9,0,0,1-3-.57A6.25,6.25,0,0,1,8.42,28a9,9,0,0,1-.57-3c-.06-1.3-.07-1.72-.07-5s0-3.74.07-5a9,9,0,0,1,.57-3A6.25,6.25,0,0,1,12,8.42a9,9,0,0,1,3-.57c1.3-.06,1.72-.07,5-.07s3.74,0,5,.07a9,9,0,0,1,3,.57A6.25,6.25,0,0,1,31.58,12a9,9,0,0,1,.57,3c.06,1.3.07,1.72.07,5S32.21,23.74,32.15,25ZM20,15.93A4.07,4.07,0,1,0,24.07,20,4.07,4.07,0,0,0,20,15.93Zm9.53-3.13a4,4,0,0,0-2.32-2.32,6.76,6.76,0,0,0-2.27-.42C23.65,10,23.26,10,20,10s-3.65,0-4.94.07a6.76,6.76,0,0,0-2.27.42,4,4,0,0,0-2.32,2.32,6.76,6.76,0,0,0-.42,2.27C10,16.35,10,16.74,10,20s0,3.65.07,4.94a6.76,6.76,0,0,0,.42,2.27,4,4,0,0,0,2.32,2.32,6.76,6.76,0,0,0,2.27.42C16.35,30,16.74,30,20,30s3.65,0,4.94-.07a6.76,6.76,0,0,0,2.27-.42,4,4,0,0,0,2.32-2.32,6.76,6.76,0,0,0,.42-2.27C30,23.65,30,23.26,30,20s0-3.65-.07-4.94A6.76,6.76,0,0,0,29.53,12.79ZM20,26.28A6.28,6.28,0,1,1,26.28,20,6.28,6.28,0,0,1,20,26.28Zm6.52-11.33A1.47,1.47,0,1,1,28,13.48,1.47,1.47,0,0,1,26.52,14.94Z"/></clipPath><radialGradient id="b" cx="19.03" cy="33.67" fx="7.51654330292275" r="47.3" gradientTransform="translate(-13.78 46.86) rotate(-79.34) scale(1 0.89)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f8d939"/><stop offset="0.08" stop-color="#f7c83f"/><stop offset="0.23" stop-color="#f49c50"/><stop offset="0.45" stop-color="#f0556b"/><stop offset="0.57" stop-color="#ee2a7b"/><stop offset="0.6" stop-color="#e62a7f"/><stop offset="0.66" stop-color="#d12a8b"/><stop offset="0.74" stop-color="#ae2a9f"/><stop offset="0.82" stop-color="#7d2aba"/><stop offset="0.91" stop-color="#402adc"/><stop offset="1" stop-color="#002aff"/></radialGradient></defs><title>INSTA</title><g class="b"><path class="c" d="M37.24,40H2.76A2.77,2.77,0,0,1,0,37.24V2.76A2.77,2.77,0,0,1,2.76,0H37.24A2.77,2.77,0,0,1,40,2.76V37.24A2.77,2.77,0,0,1,37.24,40"/></g></svg>
+              </a>
+              <div class="description">
+                <a href="https://www.instagram.com/ornis31/" target="_blank">https://www.instagram.com/ornis31/</a>
+              </div>
+            </div>
+          </li>
         </ul>
         </div>
         <p>ORNIS &copy; 2016</p>
