@@ -296,3 +296,6 @@ function responsiveNav(menu) {
     });
   }
 }
+$(document).ready(function() {
+  $(".fancybox").fancybox();
+});	
